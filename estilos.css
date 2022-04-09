@@ -253,11 +253,12 @@ p .introduccion {
     padding-left: 20px;
     }
 
- .experiencia2 {
-	display: flex;
+ .experiencia2 {display: flex;
 	align-items: flex-start;
-	 animation: acelerate 2s ;
+	flex-wrap: nowrap;
+	animation: acelerate 2s ;
 	margin-left: 500px;
+
 }
 
 .cerotres{
