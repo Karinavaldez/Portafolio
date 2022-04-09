@@ -15,7 +15,7 @@
  .container {
 	display: flex;
 	align-items: flex-start;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	animation: aparecer 3s ;
 
 }
@@ -89,7 +89,7 @@ a{
  .Cuerpo {
 	display: flex;
 	align-items: flex-start;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	flex-direction:column;
 	animation: aparecer 2s;
   
@@ -145,7 +145,7 @@ p {
 .Experiencia {
 	display: flex;
 	align-items: flex-start;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	animation: acelerate 2s ;
 }
 
@@ -264,7 +264,6 @@ p .introduccion {
 	color:#64ffda ;
 	font-size: 20px;
 	font-family: 'Space Mono', monoespacio;
-	margin-left: 500px;
 	margin-top: 250px;
 }
 
@@ -279,7 +278,7 @@ p .introduccion {
 .botones{
   display: flex;
 	align-items: flex-start;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	flex-direction:column;
 	margin-left: 500px;
 	margin-top: 40px;
@@ -448,7 +447,7 @@ p .introduccion {
 .final{
 	display: flex;
 	align-items: flex-start;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	flex-direction:column;
 	animation: acelerate 2s ;
 }
@@ -617,14 +616,18 @@ p .introduccion {
 	}
  }
 
+/*tablet*/
 
-@media (max-width: 1100px){
+@media (min-width: 480px) and (max-width: 1100px){
+	.cuero{
+		width: 720px;
+	}
  .hola {
     padding-left: 80px;
 }  
 .titulo, .Subtitulo, .p1, .p2{
 	padding-left: 80px;
-	width: 700px;
+	width: 100%;
 }
 a.boton, .cerodos, .grid-container{
 	margin-left: 80px;
@@ -637,11 +640,11 @@ a.boton, .cerodos, .grid-container{
 }
 .titulo3{
 	margin-left: 80px;
-	width: 600px;
+	width: 100%;
 }
 .p4{
 	padding-left: 80px;
-	width: 600px;
+	width: 100%;
 }
 #boton2{
 	margin-top: 30px;
@@ -680,8 +683,7 @@ div.thebee{
 }
 .container{
 	flex-direction: column;
-/*	margin-left: 20px;
-	/*width: 600px;*/
+
 }
 .nav_menu{
 flex-direction: column;
@@ -708,12 +710,10 @@ transform: translateY(-100%);
 
 }
 .Numero{
-	/*margin-top: 80px;*/
-/*	margin-left: 25px;*/
+	
 	font-size: 20px;
 }
 .Menu{
-	/*width: 500px;*/
 	margin-bottom: 60px;
   margin-left: 30px;
 	font-size: 20px;
@@ -730,5 +730,155 @@ transform: translateY(-100%);
 }
 
 }
+
+
+/*celulares*/
+
+@media (max-width: 480px){
+
+.Cuerpo{
+	width:480px ;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.hola {
+    padding-left: 10px;
+    width: 100%;
+}  
+.titulo, .Subtitulo, .p1, .p2{
+	padding-left:10px;
+	width: 100%;
+}
+p, .p2{
+	width: 100%;
+}
+a.boton, .cerodos, .grid-container{
+	margin-left: 10px;
+}
+.botones{
+	margin-left: 2px;
+	width: 100%;
+}
+.cerotres{
+	width: 20%;
+}
+.cerocuatro{
+	margin-left: 10px;
+	width: 20%;
+}
+h3.titulo3{
+	margin-left: 10px;
+	width: 100%;
+}
+.title{
+	width: 100%;
+}
+.p4{
+	padding-left: 10px;
+	width: 100%;
+}
+#boton2{
+	margin-top: 30px;
+}
+div.thebee{
+	width: 100%;
+}
+.experienciados{
+	width: 50%;
+}
+.p6, .s3, .s2, .s1, .p8, .p5, .img1, .after{
+	display: none;
+}
+.u, .vertical, .email_{
+	display: none;
+}
+.grid-r{
+	margin-left: 10px;
+}
+.p4::before{
+	display: none;
+}
+.cerocinco{
+	margin-left: 110px;
+}
+.imgthebee{
+	width: 100%;
+	height: 250px;
+}
+.hamburguesa{
+	position: relative;
+	top: 0.5rem;
+	right: 2rem;
+	cursor: pointer;
+	display: flex;
+	filter: invert(1);
+	width: 40px;
+	margin-top: 20px;
+	z-index:10;
+	position: fixed;
+	  
+}
+div.title{
+	width: 100%;
+}
+.final{
+	width: 100%;
+	margin-right: 0px;
+}
+.container{
+	flex-direction: column;
+
+}
+.nav_menu{
+flex-direction: column;
+font-size: 22px;
+-webkit-box-pack: center;
+justify-content: center;
+-webkit-box-align: center;
+align-items: center;
+position: fixed;
+top: 0px;
+bottom: 0px;
+right: 0px;
+padding: 50px 10px;
+width: min(75vw, 400px);
+height: 100vh;
+outline: 0px;
+background-color: #112240;
+box-shadow: -10px 0px 30px -15px rgba(2,12,27,0.7);
+z-index: 9;
+transform: translateX(0vw);
+visibility: visible;
+transition:all 0.3s /*cubic-bezier(0.645,0.045,0.355,1)*/;
+transform: translateY(-100%);
+
+}
+.Numero{
+	
+	font-size: 20px;
+}
+.Menu{
+	margin-bottom: 60px;
+  margin-left: 10px;
+	font-size: 20px;
+}
+.textofinal{
+	padding-right: 0px;
+	width: 100%;
+}
+.Whatssap{
+	margin-left: 150px;
+}
+
+.img{
+	width: 250px;
+}
+.nav_menu--show{
+	transform: translateY(0);
+}
+
+}
+
+
 
 
