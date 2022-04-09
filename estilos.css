@@ -256,9 +256,9 @@ p .introduccion {
  .experiencia2 {
 	display: flex;
 	align-items: flex-start;
-	flex-wrap: nowrap;
-	animation: acelerate 2s ;
+	 animation: acelerate 2s ;
 	margin-left: 500px;
+}
 
 .cerotres{
 	color:#64ffda ;
